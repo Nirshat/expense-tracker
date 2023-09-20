@@ -22,8 +22,10 @@ const localStorageKey = 'logs';
 
 const useHistory = create<State & Actions>((set) => {
 
+  const initialLogs = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
+
   return {
-    logs: [],
+    logs: initialLogs,
     updateLogs: (info) => {
       set((state) => {
         const newLogs = [info, ...state.logs];
