@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+  background-color:#edd5ff;
+  /* padding:6rem 0; */
+  box-sizing: border-box;
+}
+
+#app-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+@media only screen and (min-width:1024px){
+  #app-body{
+    width: 40%;
+  }
+}
